@@ -1,0 +1,243 @@
+html {
+    background: radial-gradient(circle, rgba(23, 1, 41, 1) 0%, rgba(13, 0, 22, 1) 100%);
+    scroll-behavior: smooth !important;
+}
+
+header,main,footer {
+    font-family: "Jetbrains Mono", monospace;
+}
+
+header h1,h3 {
+    text-align: center;
+    color: #FFF;
+}
+
+header h1 i {
+    animation: acenar 1.5s infinite;
+    transition: .3 all ease-in-out;
+}
+
+.upper-bar ul {
+    display: flex;
+    padding: 2em;
+    gap: 2em;
+    font-size: 1.2em;
+    justify-content: center;
+}
+
+ul li a {
+    color: rgb(151, 98, 207);
+    transition: 0.3s ease-in-out;
+}
+
+li a:hover {
+    color: yellow;
+}
+
+.contactForms {
+    min-height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#homepage {
+    color: #FFF;
+}
+
+.container-text-photo {
+    min-height: 90dvh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 1em;
+}
+
+.text-homepage {
+    width: 50%;
+}
+
+.text-homepage hr {
+    color: #FFF;
+}
+
+.text-homepage span {
+    font-size: 3em;
+    font-weight: 800;
+    text-align: justify;
+    display: flex;
+    color: #9057cc;
+}
+
+.text-homepage p {
+    text-align: justify;
+}
+
+p i {
+    color: #9057cc;
+}
+
+#homepage img {
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    animation: img 3s infinite;
+}
+
+#formation {
+    color: #FFF;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 90vh;
+    font-size: 1.2em;
+}
+
+#about-me {
+    min-height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFF;
+}
+
+#projects {    
+    color: #FFF;
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+}
+
+.futureWork {
+    display: flex;
+    justify-content: center;
+}
+
+.projects-table {
+    width: 80%; 
+    margin: 20px auto; 
+    border-radius: 1em;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.tabela {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 1em;
+    background-color: rgba(255, 255, 255, 0.150);
+    color: white;
+}
+
+.tabela thead tr {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #ffffff;
+    text-align: left;
+}
+
+.tabela th,
+.tabela td {
+    padding: 12px 15px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    text-align: left; /* Alinha o texto à esquerda por padrão */
+}
+
+.tabela tbody tr:hover {
+    background-color: rgba(255, 255, 255, 0.08);
+}
+
+.tabela th:nth-child(1), /* Alinha o cabeçalho "Nome" */
+.tabela td:nth-child(1) {
+    text-align: left;
+}
+
+.tabela th:nth-child(2), /* Alinha o cabeçalho "Tecnologias usadas" */
+.tabela td:nth-child(2) {
+    text-align: left;
+}
+
+.tabela th:nth-child(3), /* Alinha o cabeçalho "Status" */
+.tabela td:nth-child(3) {
+    text-align: center; /* Centraliza o conteúdo da coluna Status */
+}
+
+.tabela tbody tr td:last-child.concluido {
+    color: #4CAF50;
+    font-weight: bold;
+}
+
+.tabela tbody tr td:last-child.em-andamento {
+    color: #ff9800;
+    font-weight: bold;
+}
+
+#contact {
+    min-height: 100dvh;
+    color: #FFF;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: rgba(255, 255, 255, 0.080);
+    padding: 4em;
+    border-radius: 1.2em;
+    border: none;
+}
+
+form button {
+    border: none;
+    font-family: "Jetbrains Mono", monospace;
+    padding: 1em;
+    background-color: #9057cc;
+    border-radius: 1em;
+    text-align: center;
+    transition: .3s all;
+}
+
+form button:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+@keyframes img {
+    0% {
+        transform: translateY(0em);
+    }
+
+    50% {
+        transform: translateY(-2em);
+    }
+
+    100% {
+        transform: translateY(0em);
+    }
+}
+
+.contact-img {
+    display: flex;
+    gap: 1em;    
+    align-items: center;
+}
+
+svg {
+    height: 32px;
+    width: 32px;
+    transition: .3s ease-in-out;
+}
+
+.contact-img svg:hover {
+    transform: scale(1.3);
+}
+
+footer {
+    background-color: rgba(255, 255, 255, 0.300);
+    text-align: center;
+    color: #FFF;
+    padding: 1em;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
