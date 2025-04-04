@@ -85,6 +85,54 @@ p i {
     animation: img 3s infinite;
 }
 
+.container-about-me {
+    background-color: rgba(255, 255, 255, 0.03);
+    display: flex;  
+    flex-direction: column;
+    justify-content: center;
+    width: 80%;
+    padding: 2em;
+    border-radius: 1em;
+}
+
+.container-about-me p {
+    text-align: justify;
+}
+
+.container-cards-about-me {
+    display: flex;
+    justify-content: space-around;
+    gap: 1em;
+    margin: 2em 0;
+}
+
+.container-cards-about-me p {
+    text-align: center;
+}
+
+.card1,.card2, .card3 {
+    height: 400px;    
+    width: 400px;
+    border-radius: 10px;
+    background-color: #592c88;
+    object-fit: cover;
+}
+
+.card1 img,.card2 img, .card3 img {
+    height: 340px;    
+    width: 400px;
+}
+
+.img-cards {
+    filter: grayscale(100%);
+    transition: all .5s;
+}
+
+.img-cards:hover {
+    filter: grayscale(0%);
+    box-shadow: ;
+}
+
 #formation {
     color: #FFF;
     display: flex;
@@ -96,11 +144,10 @@ p i {
 
 #about-me {
     color: #FFF;
-
-    min-height: 90vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    min-height: 90vh;
     font-size: 1.2em;
 }
 
@@ -172,11 +219,6 @@ p i {
 .tabela tbody tr td:last-child.em-andamento {
     color: #ff9800;
     font-weight: bold;
-}
-
-#contact {
-    min-height: 100dvh;
-    color: #FFF;
 }
 
 form {
