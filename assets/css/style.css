@@ -95,11 +95,13 @@ p i {
 }
 
 #about-me {
+    color: #FFF;
+
     min-height: 90vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #FFF;
+    font-size: 1.2em;
 }
 
 #projects {    
