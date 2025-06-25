@@ -1,0 +1,17 @@
+.flex {
+    display: flex;
+}
+
+.flex-align {
+    align-items: center;
+    justify-content: center;
+}
+
+.flex-around {
+    align-items: center;
+    justify-content: space-around;
+}
+
+.circle {
+    border-radius: 50%;
+}
