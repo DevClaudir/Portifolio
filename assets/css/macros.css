@@ -35,6 +35,10 @@
     border-radius: 50%;
 }
 
+.justify {
+    text-align: justify;
+}
+
 @keyframes pulse-border {
     0% { background-position: 0% 50%; }
     100% { background-position: 100% 50%; }
