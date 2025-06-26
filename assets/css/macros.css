@@ -1,3 +1,22 @@
+:root {
+    /* Dracula Colors */
+    --dracula-background: #282a36;
+    --dracula-current-line: #44475a;
+    --dracula-foreground: #f8f8f2;
+    --dracula-comment: #6272a4;
+    --dracula-cyan: #8be9fd;
+    --dracula-green: #50fa7b;
+    --dracula-orange: #ffb86c;
+    --dracula-pink: #ff79c6;
+    --dracula-purple: #bd93f9;
+    --dracula-red: #ff5555;
+    --dracula-yellow: #f1fa8c;
+}
+
+.align {
+    text-align: center;
+}
+
 .flex {
     display: flex;
 }
@@ -7,11 +26,35 @@
     justify-content: center;
 }
 
-.flex-around {
+.flex-around, #flex-around {
     align-items: center;
     justify-content: space-around;
 }
 
 .circle {
     border-radius: 50%;
+}
+
+@keyframes pulse-border {
+    0% { background-position: 0% 50%; }
+    100% { background-position: 100% 50%; }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes zoomIn {
+    from { transform: scale(0.8); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+}
+
+@keyframes subirDescer {
+    0% {
+        transform: translateY(-10px); /* Posição inicial (em cima) */
+    }
+    100% {
+        transform: translateY(10px); /* Posição final (para baixo) - ajuste o valor conforme necessário */
+    }
 }

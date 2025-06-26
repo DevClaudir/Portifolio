@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,11 +11,12 @@
     <link rel="stylesheet" href="assets/css/macros.css">
     <title>Claudir Santos Goes - Portfólio</title>
 </head>
+
 <body>
-    <header>
+    <header class="flex flex-align">
         <div class="upper-bar">
             <nav>
-                <ul>
+                <ul class="flex flex-align">
                     <li><a href="#about-me">Sobre mim</a></li>
                     <li><a href="#events-setup">Eventos e Setup</a></li>
                     <li><a href="#projects">Projetos</a></li>
@@ -24,18 +26,17 @@
         </div><br>
     </header>
     <main>
-        <section id="homepage">
-            <div class="container-text-photo">
-                <div class="text-homepage">
-                    <pre><span class="highlight-code">const name = "<span class="string-value">Claudir Santos Goes</span>";</span></pre>
-                    <hr>
+        <section id="homepage" class="flex flex-align align">
+            <div class="container-text-photo flex flex-around">
+
+                <div class="text-homepage align">
+                    <pre><span class="highlight-code">string name = "<span class="string-value">Claudir Santos Goes</span>";</span></pre>
                     <p>Estudante de tecnologia, com base de conhecimento em desenvolvimento <i>Front-end e Back-end</i>,
                         através de tecnologias de desenvolvimento e linguagens como HTML, CSS, JavaScript, Python, C#,
-                        Java e banco de dados. Sou apaixonado por resolver problemas e criar soluções eficientes.
-                        </p>
+                        Java e banco de dados. Sou apaixonado por resolver problemas e criar soluções eficientes.</p>
                 </div>
-                <a href="https://www.linkedin.com/in/claudir-santosgoes/" target="_blank" class="profile-link">
-                    <img src="assets/img/profile-pic-1.png" alt="Foto de Claudir Santos" class="profile-image">
+                <a href="https://www.linkedin.com/in/claudir-santosgoes/" target="_blank" class="profile-link circle">
+                    <img src="assets/img/profile-pic-1.png" alt="Foto de Claudir Santos" class="profile-image circle">
                 </a>
             </div>
         </section>
@@ -43,25 +44,31 @@
         <section id="about-me">
             <div class="container-about-me">
                 <h2>Sobre Mim</h2>
-                <p>Tenho 18 anos e moro em SP. Sou um estudante, com experiência em front-end, back-end, e bancos de dados. Além disso, possuo conhecimentos sólidos em eletrônica e montagem de computadores, o que me oferece uma visão holística dos sistemas. Estou em busca da minha primeira oportunidade na área de tecnologia, onde possa aplicar e expandir minhas habilidades, contribuindo ativamente para o sucesso da equipe e da empresa.</p>
+                <p>Sou um estudante que reside em SP, com conhecimentos em desenvolvimento front, back-end e ferramentas
+                    para trabalho colaborativo, como metodologia ágil SCRUM, Git e Github, além de base sólida em
+                    eletrônica, em conteúdos como, montagem e manutenção de computadores, sistemas elétricos, IoT,
+                    desenvolvimento embarcado e microcontroladores.<br>
+                    <span>Estou em busca da minha primeira oportunidade de trabalho na área de tecnologia, no qual
+                        consiga me desenvolver profissionalmente e colaborar positivamente com o crescimento da
+                        empresa.</span>
 
-                <div class="skills-grid">
-                    <div class="skill-item">
+                <div class="skills-grid flex flex-align">
+                    <div class="skill-item align">
                         <i class="fas fa-code"></i>
                         <h3>Desenvolvimento Web</h3>
                         <p>HTML, CSS, JavaScript, Python, C# e Java</p>
                     </div>
-                    <div class="skill-item">
+                    <div class="skill-item align">
                         <i class="fas fa-database"></i>
                         <h3>Banco de Dados</h3>
                         <p>Modelagem e manipulação de dados.</p>
                     </div>
-                    <div class="skill-item">
+                    <div class="skill-item align">
                         <i class="fas fa-microchip"></i>
                         <h3>Eletrônica</h3>
                         <p>Conhecimento em circuitos e componentes eletrônicos.</p>
                     </div>
-                    <div class="skill-item">
+                    <div class="skill-item align">
                         <i class="fas fa-desktop"></i>
                         <h3>Hardware & Montagem</h3>
                         <p>Montagem e manutenção de computadores.</p>
@@ -71,42 +78,47 @@
                 <h2>Minha Formação</h2>
                 <div class="formation-timeline">
                     <div class="timeline-item">
-                        <div class="timeline-icon"><i class="fas fa-graduation-cap"></i></div>
-                        <div class="timeline-content">
-                            <h3>Técnico em Eletrônica</h3>
-                            <p class="institution">ETEC</p>
-                            <span class="period">Concluído</span>
-                        </div>
-                    </div>
-                    <div class="timeline-item">
-                        <div class="timeline-icon"><i class="fas fa-laptop-code"></i></div>
-                        <div class="timeline-content">
-                            <h3>Técnico em Informática</h3>
-                            <p class="institution">SENAC</p>
-                            <span class="period">Concluído</span>
-                        </div>
-                    </div>
-                    <div class="timeline-item">
-                        <div class="timeline-icon"><i class="fas fa-tools"></i></div>
-                        <div class="timeline-content">
-                            <h3>Suporte em TI</h3>
-                            <p class="institution">Instituição IOS - Unidade SP</p>
-                            <span class="period">Concluído</span>
-                        </div>
-                    </div>
-                    <div class="timeline-item">
-                        <div class="timeline-icon"><i class="fas fa-globe"></i></div>
-                        <div class="timeline-content">
-                            <h3>Desenvolvimento Web</h3>
-                            <p class="institution">Instituição IOS - Unidade SP</p>
-                            <span class="period">Concluído</span>
-                        </div>
-                    </div>
-                    <div class="timeline-item">
-                        <div class="timeline-icon"><i class="fas fa-robot"></i></div>
+
+
+                        <div class="timeline-icon circle flex flex-align"><i class="fas fa-robot"></i></div>
                         <div class="timeline-content">
                             <h3>Robótica</h3>
                             <p class="institution">Escola Pólis</p>
+                            <span class="period">Concluído</span>
+                        </div>
+
+                        <div class="timeline-icon circle flex flex-align"><i class="fas fa-globe"></i></div>
+                        <div class="timeline-content">
+                            <h3>Desenvolvimento Web</h3>
+                            <p class="institution">Instituição IOS</p>
+                            <span class="period">Concluído</span>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-icon circle flex flex-align"><i class="fas fa-tools"></i></div>
+                        <div class="timeline-content">
+                            <h3>Suporte em TI</h3>
+                            <p class="institution">Instituição IOS</p>
+                            <span class="period">Concluído</span>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-icon circle flex flex-align"><i class="fas fa-graduation-cap"></i></div>
+                        <div class="timeline-content">
+                            <h3>Novotec Técnico em Eletrônica</h3>
+                            <p class="institution">Etec</p>
+                            <span class="period">Concluído</span>
+                        </div>
+                    </div>
+
+
+                    <div class="timeline-item">
+                        <div class="timeline-icon circle flex flex-align"><i class="fas fa-laptop-code"></i></div>
+                        <div class="timeline-content">
+                            <h3>Técnico em Informática</h3>
+                            <p class="institution">Senac</p>
                             <span class="period">Concluído</span>
                         </div>
                     </div>
@@ -114,7 +126,7 @@
             </div>
         </section>
 
-        <section id="events-setup">
+        <section id="events-setup" class="align">
             <h2>Eventos de Tecnologia e Meu Setup</h2>
             <p class="section-description">A participação em eventos de tecnologia e a otimização do meu ambiente de
                 trabalho são cruciais para o meu desenvolvimento e para expandir minha rede de contatos no universo
@@ -168,9 +180,9 @@
             </div>
         </section>
 
-        <section id="projects">
+        <section id="projects" class="align">
             <h2>Meus Projetos</h2>
-            <div class="projects-grid">
+            <div class="projects-grid flex flex-align">
                 <div class="project-card">
                     <img src="assets/img/project-portfolio.png" alt="Miniatura do Projeto Portfólio">
                     <h3>Portfólio Pessoal</h3>
@@ -203,50 +215,50 @@
                     data-description="Certificação em Eletrônica pela ETEC. Abrange circuitos, componentes e sistemas eletrônicos.">
                     <img src="assets/img/certificacao_eletronica_thumb.jpg" alt="Certificação Técnico em Eletrônica">
                     <h3>Técnico em Eletrônica</h3>
-                    <p class="cert-short-desc">Conclusão do curso técnico pela ETEC.</p>
+                    <p class="cert-short-desc">Etec</p>
                 </div>
                 <div class="cert-card" data-full-image="assets/img/certificacao_informatica.jpg"
                     data-description="Certificação em Informática pelo SENAC. Foco em hardware, software e redes.">
                     <img src="assets/img/certificacao_informatica_thumb.jpg" alt="Certificação Técnico em Informática">
                     <h3>Técnico em Informática</h3>
-                    <p class="cert-short-desc">Formação completa em informática pelo SENAC.</p>
+                    <p class="cert-short-desc">Senac</p>
                 </div>
                 <div class="cert-card" data-full-image="assets/img/certificacao_suporte_ti.jpg"
                     data-description="Certificação em Suporte em TI pela Instituição IOS. Habilidades em atendimento e resolução de problemas técnicos.">
                     <img src="assets/img/certificacao_suporte_ti_thumb.jpg" alt="Certificação Suporte em TI">
                     <h3>Suporte em TI</h3>
-                    <p class="cert-short-desc">Qualificação em suporte técnico pelo IOS.</p>
+                    <p class="cert-short-desc">IOS</p>
                 </div>
                 <div class="cert-card" data-full-image="assets/img/desenvolvimentoWeb - IOS-1.jpeg"
                     data-description="Certificação em Desenvolvimento Web pela Instituição IOS, com 300 horas de carga horária. Abrange HTML5, CSS3, React, Java, Git e GitHub.">
                     <img src="assets/img/desenvolvimentoWeb - IOS-1_thumb.jpeg" alt="Certificação Desenvolvimento Web">
                     <h3>Desenvolvimento Web</h3>
-                    <p class="cert-short-desc">Foco em desenvolvimento web com tecnologias modernas.</p>
+                    <p class="cert-short-desc">IOS</p>
                 </div>
                 <div class="cert-card" data-full-image="assets/img/certificacao_robotica.jpg"
                     data-description="Certificação em Robótica pela Escola Pólis. Introdução à programação de robôs.">
                     <img src="assets/img/certificacao_robotica_thumb.jpg" alt="Certificação Robótica">
                     <h3>Robótica</h3>
-                    <p class="cert-short-desc">Curso de robótica pela Escola Pólis.</p>
+                    <p class="cert-short-desc">Escola Pólis</p>
                 </div>
                 <div class="cert-card" data-full-image="assets/img/AssistenteDeTI - SENAC .jpeg"
                     data-description="Certificado de Qualificação Profissional Técnica de Assistente de Suporte e Manutenção de Computadores pelo Senac Osasco, concluído em 2024.">
                     <img src="assets/img/AssistenteDeTI - SENAC_thumb.jpeg" alt="Certificação Assistente de TI">
                     <h3>Assistente de Suporte e Manutenção de Computadores</h3>
-                    <p class="cert-short-desc">Qualificação em suporte e manutenção de computadores.</p>
+                    <p class="cert-short-desc">Senac</p>
                 </div>
                 <div class="cert-card" data-full-image="assets/img/formaçãoEmTI - RECICLAR.jpeg"
                     data-description="Certificado do Programa de Formação em Tecnologia do Instituto Reciclar, 190 horas, 2023-2024, com foco em competências socioemocionais e habilidades técnicas.">
                     <img src="assets/img/formaçãoEmTI - RECICLAR_thumb.jpeg" alt="Certificação Formação em TI Reciclar">
                     <h3>Formação em Tecnologia</h3>
-                    <p class="cert-short-desc">Programa de formação do Instituto Reciclar.</p>
+                    <p class="cert-short-desc">Instituto Reciclar</p>
                 </div>
             </div>
         </section>
 
     </main><br>
 
-    <footer>
+    <footer class="align">
         <p>&copy 2025 - Claudir Santos Goes. Todos direitos reservados.</p>
     </footer>
     <script src="assets/js/main.js"></script>
