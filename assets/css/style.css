@@ -6,11 +6,11 @@
 }
 
 html {
-    background: var(--base);
+    background: var(--crust);
     scroll-behavior: smooth !important;
 }
 header {
-    background: var(--base);
+    background: var(--crust);
     padding: 1.5em 0;
     position: sticky;
     top: 0;
@@ -22,15 +22,6 @@ body {
     font-family: 'Poppins', sans-serif;
     color: var(--text);
 }
-
-h1, h2, h3, h4, h5, h6 {
-    font-family: 'JetBrains Mono', monospace;
-    color: var(--lavender);
-    text-align: center;
-    margin-bottom: 1em;
-}
-
-
 
 .upper-bar nav ul {
     gap: 2.5em;
@@ -54,77 +45,70 @@ h1, h2, h3, h4, h5, h6 {
     transform: scale(1.1);
 }
 
-#homepage {
-    min-height: 100vh;
-    padding: 2em;
+
+.hero {
+  min-height: 85vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.container-text-photo {
-    flex-direction: row;
-    max-width: 1200px;
-    width: 100%;
-    gap: 3em;
+.hero-content {
+  display: flex;
+  align-items: center;
+  gap: 20em;
 }
 
-.text-homepage {
-    max-width: 700px;
+.intro {
+  max-width: 36em;
+  gap: 12em;
+  font-size: 1.10em;
 }
 
-.text-homepage pre {
-    background-color: var(--surface1);
-    padding: 16px;
-    border-radius: 12px;
-    font-size: 1.9em;
-    height: auto;
-    width: auto;
-    margin-bottom: 1em;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
-    font-family: 'Jetbrains Mono', monospace;
+.links {
+    justify-content: center;
 }
 
-.highlight-code {
-    color: var(--mauve);
+.links i {
+    font-size: 2rem;
+    letter-spacing: 1.5rem;
+    color: var(--lavender);
 }
 
-.string-value {
-    color: var(--yellow);
+.scroll-down a, .scroll-down i {
+    color: var(--lavender);
+    align-content: center;
+    padding: 1em 0.5em 1em 1em;
 }
 
-hr {
-    width: 100%;
-    height: 100%;
-    color: var(--mauve);
+.scroll-down i {
+     animation: arrowDown 1.25s infinite;
 }
 
-.text-homepage p {
-    font-size: 1.1em;
-    text-align: justify;
-    color: var(--text);
-}
-
-.text-homepage p i {
-    color: var(--mauve);
-    font-style: normal;
-    font-weight: bold;
-}
-
-.profile-link {
-    overflow: hidden;
-    padding: 4px;
-    background: linear-gradient(45deg, var(--lavender), var(--blue), var(--yellow));
-}
-
-.profile-image {
-    width: 350px;
-    height: 350px;
-    display: block;
-    transition: .3s all;
-    object-position: 0% 35%; /* Ajuste este valor! */
+.profile img {
+    height: 300px;
+    width: 300px;
     object-fit: cover;
+    border-radius: 50%;
+    border: 0.25em solid var(--lavender);
 }
 
-.profile-link:hover .profile-image {
-    transform: scale(1.02);
+.highlight {
+    color: var(--yellow);
+    margin-bottom: 1em;
+    margin-left: 1.25em;
+}
+
+.lower-text {
+    justify-content: space-around;
+    margin-top: 2em;
+}
+
+.profile p {
+    text-align: center;
+    font-size: 1.1rem;
+    padding-top: 2em;
+    color: #FFF;
 }
 
 #about-me {
@@ -261,7 +245,7 @@ hr {
 
 .timeline-content .period {
     font-size: 0.8em;
-    color: var(--overlay0);
+    color: #FFF;
     text-align: left;
     display: block;
 }
@@ -484,4 +468,13 @@ footer p {
     font-family: 'JetBrains Mono', monospace;
     font-size: 0.9em;
     color: var(--overlay0);
+}
+
+@keyframes arrowDown {
+    0%, 100% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(15px);
+    }
 }
