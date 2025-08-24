@@ -65,14 +65,16 @@ body {
   font-size: 1.10em;
 }
 
-.links {
-    justify-content: center;
-}
-
-.links i {
-    font-size: 2rem;
+.links a i{
+    display: inline-block;
+    font-size: 2.5rem;
     letter-spacing: 1.5rem;
     color: var(--lavender);
+    transition: .5s all;
+}
+
+.links a i:hover {
+    color: var(--yellow);
 }
 
 .scroll-down a, .scroll-down i {
@@ -100,7 +102,8 @@ body {
 }
 
 .lower-text {
-    justify-content: space-around;
+    justify-content: center;
+    gap: 2.5em;
     margin-top: 2em;
     align-items: center;
 }
