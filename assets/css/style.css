@@ -191,6 +191,12 @@ body {
     margin-top: 0.25em;
 }
 
+.card-formacao i {
+    font-size: 2em;
+    color: var(--lavender);
+    margin-bottom: 0.5em;
+}
+
 .formacao-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
