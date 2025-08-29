@@ -1,0 +1,153 @@
+@media (min-width: 769px) and (max-width: 1024px) {
+    .upper-bar nav ul {
+        gap: 1.5em;
+        font-size: 1.1em;
+        flex-wrap: wrap;
+    }
+
+    .section-container {
+        padding: 2em 1em;
+    }
+
+    .hero-content {
+        flex-direction: column-reverse;
+        gap: 3em;
+        text-align: center;
+    }
+
+    .projects-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5em;
+        justify-items: center;
+    }
+
+    .project-card {
+        width: 100%;
+        max-width: 25rem;
+    }
+
+    .skills-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.5rem;
+    }
+
+    .contact-links-container {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .upper-bar nav ul {
+        flex-direction: row;
+        gap: 1.5em;
+        font-size: 1em;
+        text-align: center;
+    }
+
+    .hero-content {
+        flex-direction: column-reverse;
+        gap: 3em;
+        text-align: center;
+    }
+
+    .intro {
+        max-width: 100%;
+        font-size: 1em;
+    }
+
+    .profile img {
+        height: 14em;
+        width: 14em;
+    }
+
+    #about-me {
+        padding: 3em 1.5em;
+    }
+
+    #about-me h2 {
+        font-size: 2em;
+    }
+
+    .container-about-me p {
+        font-size: .95em;
+    }
+
+    .formation-item {
+        flex-direction: column;
+        gap: 1.5em;
+        text-align: center;
+    }
+
+    .formation-logo img {
+        width: 5em;
+        height: 5em;
+    }
+
+    .skill-item {
+        width: 45%;
+        padding: 2rem 1.5rem;
+    }
+
+    .skills-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+
+    .projects-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .project-card {
+        width: 100%;
+        max-width: 28rem;
+    }
+
+    .contact-links-container {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    .contact-item {
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .upper-bar nav ul {
+        flex-direction: row;
+        gap: 0.5rem;
+        text-align: center;
+    }
+
+    .intro h1 {
+        font-size: 1.8rem;
+    }
+
+    .intro p {
+        font-size: 1rem;
+    }
+
+    .profile img {
+        height: 12rem;
+        width: 12rem;
+    }
+
+    #about-me h2 {
+        font-size: 1.2rem;
+    }
+
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-item {
+        width: 100%;
+        justify-content: center;
+    }
+}
