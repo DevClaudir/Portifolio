@@ -130,7 +130,7 @@ body {
     font-size: 2.5em;
 }
 
-#about-me p {
+.container-about-me p {
     margin-bottom: 1em;
     text-align: justify;
     color: var(--text);
@@ -138,32 +138,66 @@ body {
     font-size: 1.1em;
 }
 
-.content-skill {
-    padding: 1.5em;
-    gap: 2em;
+#skills.content-skills {
+    padding: 6em 2em;
+    max-width: 75em;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#skills.content-skills h2 {
+    margin-bottom: 2.5em;
+    position: relative;
+    display: inline-block;
+}
+
+#skills.content-skills h2::after {
+    content: '';
+    display: block;
+    width: 60%;
+    height: 3px;
+    background-color: var(--yellow);
+    margin: 0.5em auto 0;
+    border-radius: 5px;
+}
+
+.skills-carousel {
+    display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    gap: 2em;
+    margin-top: 3em;
 }
 
 .skill-item {
-    background-color: rgba(0, 0, 0, 0.2);
-    box-shadow: 0 .25em 1em rgba(0, 0, 0, 0.5);
-    padding: 2em;
+    background-color: rgba(180, 190, 254, 0.1);
+    padding: 2.5em 2em;
     border-radius: .5em;
+    width: 13em;
     flex-direction: column;
+    text-align: center;
+    transition: all .5s;
+    box-shadow: 0px 0.9em 2em rgba(0, 0, 0, 0.3);
+}
+
+.skill-item:hover {
+    color: var(--yellow);
+    transform: translateY(-0.5em);
+    cursor: pointer;
 }
 
 .skill-item i {
-    font-size: 5em;
-    color: var(--yellow);
+    font-size: 4em;
 }
 
 .skill-item p {
-    font-size: 0.9em;
-    color: var(--text);
-    margin-top: 1em;
-    text-align: center;
-    font-weight: bolder;
+    font-size: 1.1em;
+    font-family: 'Poppins', sans-serif;
+    margin-top: .5em;
+    font-weight: 600;
 }
+
+
 
 .content-formations {
     flex-direction: column;
@@ -179,7 +213,6 @@ body {
     justify-content: center;
     gap: 4em;
     max-width: 36em;
-    margin: 0 auto;
     background-color: rgba(180, 190, 254, 0.1);
     padding: 1.5em 2em;
     border-radius: .5em;
@@ -187,7 +220,6 @@ body {
 
 .formation-info {
     flex: 1;
-    /* Garante que o texto ocupe espaço e deixe a logo encostada */
 }
 
 .formation-info h3 {
@@ -197,9 +229,8 @@ body {
 
 .formation-info p {
     margin: 0.3em 0;
-    font-size: 0.95em;
-    color: var(--text);
-    font-size: 'Poppins';
+    font-size: 1.1em;
+    font-family: 'Poppins';
 }
 
 .formation-logo img {
@@ -208,7 +239,7 @@ body {
     object-fit: contain;
 }
 
-/* Estilos para a seção de Contato */
+
 #contact {
     padding: 4em 2em;
     max-width: 1200px;
